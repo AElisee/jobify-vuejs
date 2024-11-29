@@ -1,0 +1,55 @@
+{
+  "offres": [
+    {
+      "id": "100off01",
+      "titre": "Développeur Front-End",
+      "description": "Créer des interfaces web modernes...",
+      "competences": "Vue.js, TailwindCSS",
+      "typeContrat": "CDD",
+      "salaire": "750 000 FCFA / mois",
+      "lieu": "Abidjan",
+      "entreprise": "TechCorp",
+      "email": "contact@techcorp.com",
+      "telephone": "0123456789"
+    },
+    {
+      "id": "100off02",
+      "titre": "Développeur Back-End",
+      "description": "Construire des apis robustes",
+      "competences": "Laravel, Nestjs",
+      "typeContrat": "CDD",
+      "salaire": "45K€ par an",
+      "lieu": "Abidjan",
+      "entreprise": "TechCorp",
+      "email": "contact@techcorp.com",
+      "telephone": "0123456789"
+    },
+    {
+      "id": "100off03",
+      "titre": "UX/UI Designer",
+      "description": "Produire des maquettes pour...",
+      "competences": "Figma, Adobe XD",
+      "typeContrat": "CDD",
+      "salaire": "45K€ par an",
+      "lieu": "Abidjan",
+      "entreprise": "TechCorp",
+      "email": "contact@techcorp.com",
+      "telephone": "0123456789"
+    }
+  ],
+  "demandes": [
+    {
+      "id": "100dem01",
+      "nomUtilisateur": "Franck",
+      "titre": "Designer UI/UX",
+      "resume": "5 ans d'expérience dans le design...",
+      "competences": "Figma, Adobe XD",
+      "expertise": "Design d'applications mobiles",
+      "disponibilite": "Immédiate",
+      "salaire": "40K€ par an",
+      "lieu": "Côte d'Ivoire",
+      "email": "jane.doe@gmail.com",
+      "telephone": "0987654321"
+    }
+  ]
+}
