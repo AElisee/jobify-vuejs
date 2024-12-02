@@ -21,7 +21,7 @@ const updateSearch = () => {
   <div>
     <form action="">
       <input
-        class="min-w-[350px] p-2 rounded-md border outline-slate-400"
+        class="min-w-[350px] p-2 rounded-md border outline-slate-400 placeholder:text-indigo-950"
         type="text"
         :placeholder="placeholder"
         v-model="searchQuery"

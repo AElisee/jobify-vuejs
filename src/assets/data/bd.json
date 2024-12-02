@@ -1,4 +1,9 @@
 {
+  "users": [
+    {
+      "id": "10us54"
+    }
+  ],
   "offres": [
     {
       "id": "100off01",
@@ -271,6 +276,22 @@
       "expertise": "ras",
       "resume": "ras",
       "dateDePublication": "2024-12-02T12:08:15.263Z"
+    },
+    {
+      "id": "df61",
+      "userId": 23,
+      "titre": "Enseignant",
+      "nomDemandeur": "momo",
+      "typeContrat": "cdi",
+      "disponibilite": "immédiate",
+      "lieu": "Abidjan",
+      "telephone": "0102034551",
+      "email": "momo@gmail.com",
+      "salaire": "350000",
+      "competences": "enseignement",
+      "expertise": "professeur de Mathematiques",
+      "resume": "2 ans expériences",
+      "dateDePublication": "2024-12-02T14:19:06.050Z"
     }
   ]
 }

@@ -22,7 +22,9 @@ watchEffect(() => {
 })
 </script>
 <template>
-  <div class="px-app bg-gradient-to-b from-slate-100/35 to-slate-100/55 p-2">
+  <div
+    class="px-app bg-gradient-to-b from-slate-100/35 to-slate-100/55 p-2 first-letter:capitalize"
+  >
     <div>
       <div class="flex gap-1 items-center">
         <BriefcaseIcon class="h-5 w-5 text-slate-700" />
@@ -42,7 +44,7 @@ watchEffect(() => {
     </div>
     <div class="pt-6 flex gap-4" v-if="demande">
       <!-- gauche -->
-      <div class="w-1/2">
+      <div class="w-1/2 first-letter:capitalize">
         <div class="py-2">
           <p class="font-bold text-slate-500 text-md underline">Nom</p>
           <p class="text-sm">
@@ -50,14 +52,14 @@ watchEffect(() => {
           </p>
         </div>
 
-        <div class="">
+        <div class="first-letter:capitalize">
           <p class="font-bold text-slate-500 text-md underline">Type de contrat</p>
           <p class="text-sm">
             {{ demande?.typeContrat }}
           </p>
         </div>
 
-        <div class="py-2">
+        <div class="py-2 first-letter:capitalize">
           <p class="font-bold text-slate-500 text-md underline">Lieu de travail</p>
           <p class="text-sm">
             {{ demande?.lieu }}
@@ -65,14 +67,14 @@ watchEffect(() => {
         </div>
 
         <!-- resume -->
-        <div>
+        <div class="first-letter:capitalize">
           <p class="font-bold text-slate-500 text-md underline">Résumé</p>
           <p class="text-sm">
             {{ demande?.resume }}
           </p>
         </div>
 
-        <div class="py-3">
+        <div class="py-3 first-letter:capitalize">
           <p class="font-bold text-slate-500 text-md underline">Salaire</p>
           <p class="text-sm" v-if="!demande.salaire || demande.salaire.trim() === ''">Non défini</p>
           <p class="text-sm" v-else>
@@ -83,11 +85,11 @@ watchEffect(() => {
       <!-- !gauche -->
 
       <div class="flex flex-col gap-2 w-1/2 border-l-2 pl-3">
-        <div class="">
+        <div class="first-letter:capitalize">
           <p class="font-bold text-slate-500 text-md underline">Compétences</p>
           <p class="text-sm">{{ demande?.competences }}...</p>
         </div>
-        <div class="">
+        <div class="first-letter:capitalize">
           <p class="font-bold text-slate-500 text-md underline">Expertise</p>
           <p class="text-sm">{{ demande?.expertise }}...</p>
         </div>

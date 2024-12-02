@@ -64,7 +64,7 @@ const handleLogin = async () => {
       />
       <p class="text-center">
         Vous n'avez de compte ?
-        <RouterLink to="/inscription" class="font-semibold text-amber-500 underline"
+        <RouterLink to="/inscription" class="font-semibold text-pink-700 underline"
           >Inscrivez-vous !</RouterLink
         >
       </p>

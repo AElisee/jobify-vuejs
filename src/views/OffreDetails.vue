@@ -22,7 +22,7 @@ watchEffect(() => {
 })
 </script>
 <template>
-  <div class="px-app bg-slate-100/55 p-2">
+  <div class="px-app bg-slate-100/55 p-2 first-letter:capitalize">
     <div>
       <div class="flex gap-1 items-center">
         <BriefcaseIcon class="h-5 w-5 text-slate-700" />
@@ -38,28 +38,30 @@ watchEffect(() => {
       </div>
     </div>
     <div class="pt-5">
-      <h2 class="text-3xl font-semibold text-slate-700">{{ offre?.titre }}</h2>
+      <h2 class="text-3xl font-semibold text-slate-700 first-letter:capitalize">
+        {{ offre?.titre }}
+      </h2>
     </div>
     <div class="pt-6 flex gap-4" v-if="offre">
       <!-- gauche -->
       <div class="w-1/2">
         <div class="py-2">
           <p class="font-bold text-slate-500 text-md underline">Entreprise</p>
-          <p class="text-sm">
+          <p class="text-sm first-letter:capitalize">
             {{ offre?.entreprise }}
           </p>
         </div>
 
         <div class="">
           <p class="font-bold text-slate-500 text-md underline">Type de contrat</p>
-          <p class="text-sm">
+          <p class="text-sm first-letter:capitalize">
             {{ offre?.typeContrat }}
           </p>
         </div>
 
         <div class="py-2">
           <p class="font-bold text-slate-500 text-md underline">Lieu de travail</p>
-          <p class="text-sm">
+          <p class="text-sm first-letter:capitalize">
             {{ offre?.lieu }}
           </p>
         </div>
@@ -67,7 +69,7 @@ watchEffect(() => {
         <!-- description -->
         <div>
           <p class="font-bold text-slate-500 text-md underline">Description</p>
-          <p class="text-sm">
+          <p class="text-sm first-letter:capitalize">
             {{ offre?.description }}
           </p>
         </div>
