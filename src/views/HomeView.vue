@@ -8,6 +8,7 @@ import { onMounted } from 'vue'
 
 const store = useOffresStore()
 
+
 onMounted(() => {
   store.fetchOffres()
 })

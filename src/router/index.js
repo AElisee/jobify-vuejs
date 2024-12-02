@@ -7,6 +7,7 @@ import SignUp from '@/views/SignUp.vue'
 import OffreDetails from '@/views/OffreDetails.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import DemandeDetails from '@/views/DemandeDetails .vue'
+import { useAuthStore } from '@/stores/auth.js'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -43,11 +44,13 @@ const router = createRouter({
       path: '/nouvelle-offre',
       name: 'nouvelle-offre',
       component: NouvelleOffre,
+      meta: { requiredAuth: true },
     },
     {
       path: '/nouvelle-demande',
       name: 'nouvelle-demande',
       component: NouvelleDemande,
+      meta: { requiredAuth: true },
     },
     {
       path: '/login',
@@ -60,6 +63,16 @@ const router = createRouter({
       component: SignUp,
     },
   ],
+})
+
+router.beforeEach((to, from, next) => {
+  const authStore = useAuthStore()
+
+  if (to.meta.requiredAuth && !authStore.isAuthenticated) {
+    next('/login')
+  } else {
+    next()
+  }
 })
 
 export default router

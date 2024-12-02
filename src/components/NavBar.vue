@@ -1,5 +1,15 @@
 <script setup>
-import { HomeIcon, TagIcon, BriefcaseIcon } from '@heroicons/vue/24/solid'
+import { useAuthStore } from '@/stores/auth.js'
+import {
+  HomeIcon,
+  TagIcon,
+  BriefcaseIcon,
+  ArrowLeftStartOnRectangleIcon,
+} from '@heroicons/vue/24/solid'
+
+const authStore = useAuthStore()
+
+console.log('user', authStore.user)
 </script>
 <template>
   <nav
@@ -25,7 +35,7 @@ import { HomeIcon, TagIcon, BriefcaseIcon } from '@heroicons/vue/24/solid'
       </ul>
     </div>
     <div>
-      <ul class="flex gap-3">
+      <ul class="flex gap-3" v-if="!authStore.isAuthenticated">
         <li>
           <RouterLink to="/login" class="px-4 py-2 text-slate-100 hover:text-amber-500">
             Se connecter
@@ -40,6 +50,14 @@ import { HomeIcon, TagIcon, BriefcaseIcon } from '@heroicons/vue/24/solid'
           </RouterLink>
         </li>
       </ul>
+      <div
+        @click="authStore.logout"
+        v-if="authStore.isAuthenticated"
+        class="flex text-amber-100 items-center cursor-pointer"
+      >
+        <ArrowLeftStartOnRectangleIcon class="h-6 w-6 text-orange-500 font-bold" />
+        Déconnexion
+      </div>
     </div>
   </nav>
 </template>

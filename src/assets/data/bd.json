@@ -255,6 +255,22 @@
       "expertise": "RAS",
       "resume": "RAS",
       "dateDePublication": "2024-12-02T07:37:08.591Z"
+    },
+    {
+      "id": "8447",
+      "userId": "yago",
+      "titre": "Carreleur",
+      "nomUtilisateur": "yanick",
+      "typeContrat": "tout type",
+      "disponibilite": "immédiate",
+      "lieu": "Côte d'Ivoire",
+      "telephone": "010203045",
+      "email": "yanick@gmail.com",
+      "salaire": "300000",
+      "competences": "ras",
+      "expertise": "ras",
+      "resume": "ras",
+      "dateDePublication": "2024-12-02T12:08:15.263Z"
     }
   ]
 }

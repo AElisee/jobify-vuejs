@@ -1,14 +1,23 @@
 <script setup>
 import OffreRecentCard from './OffreRecentCard.vue'
 import { useOffresStore } from '@/stores/offres.js'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { PlusIcon } from '@heroicons/vue/24/solid'
+import { useEtatsGeneraux } from '@/stores/etatsGeneraux.js'
+import { useRouter } from 'vue-router'
 
 const store = useOffresStore()
+const etatsStore = useEtatsGeneraux()
+const router = useRouter()
 
 onMounted(() => {
   store.fetchOffres()
 })
+
+const handleClikAdd = () => {
+  etatsStore.clickAddBtn('/nouvelle-offre')
+  router.push('/nouvelle-offre')
+}
 </script>
 <template>
   <div class="relative px-app w-full flex justify-center mt-10 bg-transparent z-10">
@@ -25,6 +34,7 @@ onMounted(() => {
     </ul>
     <div class="pt-6">
       <a
+        @click.prevent="handleClikAdd"
         href="/nouvelle-offre"
         class="border border-1 border-slate-200 rounded-md px-3 py-2 flex w-max items-center gap-2"
       >

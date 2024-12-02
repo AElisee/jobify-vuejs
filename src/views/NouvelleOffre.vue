@@ -1,11 +1,13 @@
 <script setup>
 import Snippet from '@/components/Snippet.vue'
+import { useAuthStore } from '@/stores/auth.js'
 import axios from 'axios'
 import { ref } from 'vue'
 
 const loading = ref(false)
 const error = ref(false)
 const sucess = ref(false)
+const authStore = useAuthStore()
 
 const form = ref({
   titre: '',
@@ -24,6 +26,7 @@ const handleSubmit = async () => {
   loading.value = true
   try {
     const formData = {
+      userId: authStore?.user.id,
       titre: form.value.titre,
       entreprise: form.value.entreprise,
       typeContrat: form.value.typeContrat,

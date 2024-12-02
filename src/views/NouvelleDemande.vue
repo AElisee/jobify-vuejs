@@ -1,15 +1,17 @@
 <script setup>
 import Snippet from '@/components/Snippet.vue'
+import { useAuthStore } from '@/stores/auth.js'
 import axios from 'axios'
 import { ref } from 'vue'
 
 const loading = ref(false)
 const error = ref(false)
 const sucess = ref(false)
+const authStore = useAuthStore()
 
 const form = ref({
   titre: '',
-  nomUtilisateur: '',
+  nomDemandeur: '',
   typeContrat: '',
   disponibilite: '',
   lieu: '',
@@ -25,8 +27,9 @@ const handleSubmit = async () => {
   loading.value = true
   try {
     const formData = {
+      userId: authStore?.user.id,
       titre: form.value.titre,
-      nomUtilisateur: form.value.nomUtilisateur,
+      nomDemandeur: form.value.nomDemandeur,
       typeContrat: form.value.typeContrat,
       disponibilite: form.value.disponibilite,
       lieu: form.value.lieu,
@@ -63,7 +66,7 @@ const handleSubmit = async () => {
 const resetForm = () => {
   form.value = {
     titre: '',
-    nomUtilisateur: '',
+    nomDemandeur: '',
     typeContrat: '',
     disponibilite: '',
     lieu: '',
@@ -92,7 +95,7 @@ const resetForm = () => {
           required
         />
         <input
-          v-model="form.nomUtilisateur"
+          v-model="form.nomDemandeur"
           type="text"
           class="w-1/2 p-2 border rounded-md outline-indigo-950"
           placeholder="Nom du demandeur (*)"

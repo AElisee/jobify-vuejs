@@ -6,14 +6,14 @@ import LoginForm from '@/components/LoginForm.vue'
     <div
       class="w-1/2 p-3 bg-slate-100/35 rounded-md h-full flex flex-col justify-center items-center"
     >
-      <h3 class="px-4 mb-2 bg-clip-text text-2xl font-bold">Logo</h3>
       <h3
         class="px-4 mb-2 bg-gradient-to-b from-pink-800 to-indigo-950 bg-clip-text text-2xl font-bold text-transparent sm:mb-4 lg:text-3xl sm:leading-tight"
       >
         Connexion à Jobify
       </h3>
       <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptatem!
+        votre espace dédié à la recherche d’opportunités professionnelles et à la mise en relation
+        avec des talents.
       </p>
     </div>
     <div class="w-1/2 p-4">

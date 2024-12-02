@@ -46,7 +46,7 @@ watchEffect(() => {
         <div class="py-2">
           <p class="font-bold text-slate-500 text-md underline">Nom</p>
           <p class="text-sm">
-            {{ demande?.nomUtilisateur }}
+            {{ demande?.nomDemandeur ? demande?.nomDemandeur : demande?.nomUtilisateur }}
           </p>
         </div>
 
