@@ -68,9 +68,7 @@ watchEffect(() => {
         <div>
           <p class="font-bold text-slate-500 text-md underline">Description</p>
           <p class="text-sm">
-            {{ offre?.description }} Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Totam, quaerat a. Corporis deleniti provident suscipit fuga expedita itaque, quis
-            mollitia animi adipisci officiis eaque rem quasi sapiente. Dolorem, beatae debitis.
+            {{ offre?.description }}
           </p>
         </div>
 
@@ -87,10 +85,7 @@ watchEffect(() => {
       <div class="flex flex-col gap-2 w-1/2 border-l-2 pl-3">
         <div class="">
           <p class="font-bold text-slate-500 text-md underline">Compétences</p>
-          <p class="text-sm">
-            {{ offre?.competences }}... Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Veniam, omnis obcaecati. Incidunt soluta sit repellendus aspernatur atque a sint animi.
-          </p>
+          <p class="text-sm">{{ offre?.competences }}</p>
         </div>
 
         <div class="flex flex-col gap-2">

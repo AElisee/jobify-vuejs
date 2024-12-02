@@ -20,7 +20,7 @@ onMounted(() => {
     </div>
   </div>
   <div class="p-6">
-    <ul class="flex gap-3 flex-wrap justify-between">
+    <ul class="flex gap-3 flex-wrap">
       <DemandeRecenteCard
         v-for="demande of store.dernieresDemandes"
         :key="demande.id"
