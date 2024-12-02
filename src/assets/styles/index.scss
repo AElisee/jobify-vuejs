@@ -4,3 +4,9 @@
 
 @import './settings';
 
+.router-link-active {
+  color: antiquewhite;
+  text-decoration: underline;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: top;
+}

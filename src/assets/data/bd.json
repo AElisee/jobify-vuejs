@@ -6,11 +6,13 @@
       "description": "Créer des interfaces web modernes...",
       "competences": "Vue.js, TailwindCSS",
       "typeContrat": "CDD",
-      "salaire": "750 000 FCFA / mois",
+      "salaire": " ",
       "lieu": "Abidjan",
       "entreprise": "TechCorp",
       "email": "contact@techcorp.com",
-      "telephone": "0123456789"
+      "telephone": "0123456789",
+      "dateDePublication": "2024-10-23",
+      "dateLimite": "2024-11-29"
     },
     {
       "id": "100off02",
@@ -22,7 +24,9 @@
       "lieu": "Abidjan",
       "entreprise": "TechCorp",
       "email": "contact@techcorp.com",
-      "telephone": "0123456789"
+      "telephone": "0123456789",
+      "dateDePublication": "2024-11-10",
+      "dateLimite": "2024-12-10"
     },
     {
       "id": "100off03",
@@ -34,7 +38,23 @@
       "lieu": "Abidjan",
       "entreprise": "TechCorp",
       "email": "contact@techcorp.com",
-      "telephone": "0123456789"
+      "telephone": "0123456789",
+      "dateDePublication": "2024-11-23",
+      "dateLimite": "2024-12-30"
+    },
+    {
+      "id": "100off04",
+      "titre": "UX/UI Designer",
+      "description": "Produire des maquettes pour...",
+      "competences": "Figma, Adobe XD",
+      "typeContrat": "CDD",
+      "salaire": "45K€ par an",
+      "lieu": "Abidjan",
+      "entreprise": "TechCorp",
+      "email": "contact@techcorp.com",
+      "telephone": "0123456789",
+      "dateDePublication": "2024-11-23",
+      "dateLimite": "2024-12-30"
     }
   ],
   "demandes": [
@@ -42,6 +62,7 @@
       "id": "100dem01",
       "nomUtilisateur": "Franck",
       "titre": "Designer UI/UX",
+      "typeContrat": "Tout type",
       "resume": "5 ans d'expérience dans le design...",
       "competences": "Figma, Adobe XD",
       "expertise": "Design d'applications mobiles",
@@ -49,7 +70,8 @@
       "salaire": "40K€ par an",
       "lieu": "Côte d'Ivoire",
       "email": "jane.doe@gmail.com",
-      "telephone": "0987654321"
+      "telephone": "0987654321",
+      "dateDePublication": "2024-11-28"
     }
   ]
 }
